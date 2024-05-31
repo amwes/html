@@ -5,21 +5,117 @@
     <meta name="viewport" content="width=device-width" />
     <title>HTML Examples</title>
     <style>
-        nav ul li {
+        header{
+            border: solid 1px purple;
+        }
+        nav ul li,
+        nav ul,
+        nav img,
+        nav h1 {
             display: inline-block;
+        }
+        nav img {
+            float: left;
+        }
+        nav ul {
+            float:right;
+        }
+        nav {  
+            border: 1px solid rgb(221, 221, 221);
+            padding: 1em;
+            margin: 1em;
+        }
+        article {
+            border: 1px solid red;
+            padding: 2em;
+        }
+        section {
+            border: 1px solid blue;
+            padding:2em;
+            margin: 2em 0;
+        }
+        aside {
+            border: 1px solid #ccc;
+            margin: 1em auto;
+            width:50%;
+            min-width:300px;
+        }
+        figure {
+            border: 1px solid orange;
+            padding: 1em;
+            width:fit-content;
+        }
+        footer {
+            background: #030124;
+            color: #fff;
+            padding: 2em;
+        }
+        .blue {
+            color: blue;
+        }
+        .red {
+            color: red;
+        }
+        .purple {
+            color: purple;
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="img/button.jpg"/>
         <nav>
+            <img src="img/button.jpg"/> <h1>Site Title</h1>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#html">HTML Elements</a></li>
+                <li><a href="#http">HTTP Statuses</a></li>
             </ul>
-        </nav> 
-    </header>
+        </nav>
+        <p>The &lt;header&gt; element (outlined in <span class="purple">purple</span>) generally contains introductory content or navigation.</p>
+    </header> 
+    <h2>HTML Elements</h2>
+    <section id="html">
+    
+        <h3>Article, Section, Aside</h3>
+        <p>The &lt;section&gt; element (outlined in <span class="blue">blue</span>) contains a generic, standalone section of a document.</p>
+        
+    <article>
+        <h4>Article</h4>
+        <p>The &lt;article&gt; element (outlined in <span class="red">red</span>) is a self-contained composition, which is intended to be independently distributable or reusable. Examples include: 
+            <ul><li>a forum post,</li>
+                <li>a magazine or newspaper article,</li>
+                <li>a blog entry,</li>
+                <li>a product card,</li>
+                <li>a user-submitted comment,</li>
+                <li>an interactive widget or gadget,</li>
+                <li>any other independent item of content.</li>
+            </ul>
+        </p>
+    </article>
+    <aside>
+        <h4>Aside</h4>
+        <p>The &lt;aside&gt; element represents a portion of a document whose content is indirectly related to the main content.</p>
+    </aside>
+    </section>
+    
+    <section>
+        <h3>Figure</h3>
+        <p>The figure element represent self-contained content, with an optional caption.</p>
+        <figure>
+            <img src="/img/button.jpg">
+            <figcaption>This is a caption.</figcaption>
+        </figure>
+
+    </section>
+    <section id="http">
+        <h3>HTTP Status Codes</h3>
+
+    </section>
+    <footer>
+        <p>The &lt;footer&gt; element represents a footer for a section of content and often contains information about the author, copyright, or links to related documents.</p>
+    </footer>
+    <script>
+        console.log("Hello");
+    </script>
 </body>
 </html>
